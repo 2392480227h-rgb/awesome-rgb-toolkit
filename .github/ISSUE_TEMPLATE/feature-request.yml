@@ -1,0 +1,41 @@
+name: ✨ Feature Request
+description: Suggest a cool new feature
+title: "[FEATURE] "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ Got a dope idea?
+        We love new ideas! Tell us what you're thinking.
+  - type: textarea
+    id: feature
+    attributes:
+      label: 🎯 Feature Description
+      description: What feature do you want?
+      placeholder: "I would love to see..."
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🤔 What Problem Does It Solve?
+      description: Why do you need this feature?
+      placeholder: "Currently it's hard to..."
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🚀 Priority
+      options:
+        - 🔥 Take my money (critical)
+        - ⭐ Would be awesome
+        - 🌶️ Nice to have
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Alternatives Considered
+      description: Any other ways you've thought about solving this?

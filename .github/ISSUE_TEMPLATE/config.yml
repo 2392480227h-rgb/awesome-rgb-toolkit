@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Ask a Question
+    url: https://github.com/2392480227h-rgb/awesome-rgb-toolkit/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 📧 Contact Maintainer
+    url: https://github.com/2392480227h-rgb
+    about: Contact the maintainer directly

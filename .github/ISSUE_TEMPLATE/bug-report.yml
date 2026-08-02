@@ -1,0 +1,47 @@
+name: 🐛 Bug Report
+description: Report a bug to help us improve
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐛 Thanks for reporting a bug!
+        Please fill out the info below so we can squash it fast.
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Bug Description
+      description: A clear description of what the bug is
+      placeholder: "When I do X, Y happens instead of Z..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔄 Steps to Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: ⚡ Severity
+      options:
+        - 💀 Critical (blocks everything)
+        - 🔥 High (blocks important stuff)
+        - ⚡ Medium (annoying but workaround exists)
+        - 🌶️ Low (minor inconvenience)
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: 💻 Operating System
+      placeholder: "e.g. macOS 14, Windows 11, Ubuntu 22.04"
+    validations:
+      required: true
